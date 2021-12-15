@@ -1,25 +1,57 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from 'react';
+import { StreamChat } from 'stream-chat';
+import { Chat } from 'stream-chat-react';
+import Cookies from 'universal-cookie';
 
-function App() {
+import { ChannelListContainer, ChannelContainer, Auth } from './components';
+
+import './App.css';
+import 'stream-chat-react/dist/css/index.css';
+
+const cookies = new Cookies();
+
+const apiKey = 'g9emqbw3q6yt';
+const authToken = cookies.get("token");
+
+const client = StreamChat.getInstance(apiKey);
+
+if(authToken) {
+  client.connectUser({
+    id: cookies.get('userId'),
+    name: cookies.get('username'),
+    fullName: cookies.get('fullName'),
+    hashedPassword: cookies.get('hashedPassword'),
+    email: cookies.get('email'),
+  }, authToken)
+}
+
+const App = () => {
+  const [createType, setCreateType] = useState('');
+  const [isCreating, setIsCreating] = useState(false);
+  const [isEditing, setIsEditing] = useState('');
+
+  if(!authToken) return <Auth />
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="app__wrapper">
+      <Chat client={client} theme="team light">
+        <ChannelListContainer
+            isCreating={isCreating}
+            setIsCreating={setIsCreating}
+            isEditing={isEditing}
+            setCreateType={setCreateType}
+        />
+        <ChannelContainer 
+            isCreating={isCreating}
+            setIsCreating={setIsCreating}
+            isEditing={isEditing}
+            setIsEditing={setIsEditing}
+            createType={createType}
+        />
+      </Chat>
     </div>
   );
 }
+
 
 export default App;
