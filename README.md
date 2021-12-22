@@ -6,9 +6,9 @@ Built using Stream Chat which gives you access to the APIs to allow you to searc
 
 Try it out:
 
-Username: Nana
+Username: admin
 
-Password: 123456
+Password: 123
 
 <img width="1245" alt="chat-app3" src="https://user-images.githubusercontent.com/79977073/146488182-072bdaee-143d-42d8-8197-ad9228eaaeba.png">
 
