@@ -6,7 +6,7 @@ Built using Stream Chat which gives you access to the APIs to allow you to searc
 
 Try it out:
 
-Username: admin
+Username: nana
 
 Password: 123
 
