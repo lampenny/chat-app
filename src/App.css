@@ -435,14 +435,15 @@
   }
   
   .channel-list__header {
-    height: 65px;
+    padding-bottom: 20px;
+    height: 62px;
   }
   
   .channel-list__header__text {
     font-family: Helvetica Neue, sans-serif;
     font-style: normal;
     font-weight: bold;
-    font-size: 20px;
+    font-size: 30px;
     line-height: 28px;
     color: #ffffff;
     text-align: center;
