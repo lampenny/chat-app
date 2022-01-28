@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import Cookies from 'universal-cookie';
 import axios from 'axios';
 
-import signinImage from '../assets/signup.jpeg';
+// import signinImage from '../assets/signup.jpeg';
 
 const cookies = new Cookies();
 
@@ -54,7 +54,9 @@ const Auth = () => {
         <div className="auth__form-container">
             <div className="auth__form-container_fields">
                 <div className="auth__form-container_fields-content">
-                    <p>{isSignup ? 'Sign Up' : 'Sign In'}</p>
+                <p className="create-channel__header">MSSGME</p>
+                <p>{isSignup ? 'Sign up now and chat with your friends' : 'Sign in to get chatting with your friends'}</p>
+                    {/* <p>{isSignup ? 'Sign Up' : 'Sign In'}</p> */}
                     <form onSubmit={handleSubmit}>
                         {isSignup && (
                             <div className="auth__form-container_fields-content_input">
@@ -129,9 +131,9 @@ const Auth = () => {
                     </div>
                 </div>
             </div>
-        <div className="auth_form-container_image">
+        {/* <div className="auth_form-container_image">
             <img src={signinImage} alt="sign in"/>
-        </div>
+        </div> */}
         </div>
     )
 }

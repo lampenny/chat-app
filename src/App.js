@@ -10,7 +10,7 @@ import 'stream-chat-react/dist/css/index.css';
 
 const cookies = new Cookies();
 
-const apiKey = 'g9emqbw3q6yt';
+const apiKey = 'xyazqrtn7myv';
 const authToken = cookies.get("token");
 
 const client = StreamChat.getInstance(apiKey);
@@ -52,6 +52,5 @@ const App = () => {
     </div>
   );
 }
-
 
 export default App;
