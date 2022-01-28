@@ -371,10 +371,13 @@
   }
   
   .channel-list__sidebar {
-    width: 72px;
+    width: auto;
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
       var(--primary-color);
     box-shadow: 1px 0px 0px rgba(0, 0, 0, 0.25);
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: space-evenly;
     /* border-top-left-radius: 16px;
     border-bottom-left-radius: 16px; */
   }
@@ -432,7 +435,7 @@
   }
   
   .channel-list__header {
-    padding-left: 16px;
+    padding-bottom: 20px;
     height: 62px;
   }
   
@@ -440,9 +443,10 @@
     font-family: Helvetica Neue, sans-serif;
     font-style: normal;
     font-weight: bold;
-    font-size: 18px;
+    font-size: 20px;
     line-height: 28px;
     color: #ffffff;
+    justify-content: center;
   }
   
   .channel-search__container {
