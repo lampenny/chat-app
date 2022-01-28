@@ -2,8 +2,6 @@
 
 A fully responsive Chat application. Features include search, reactions, threads, group messaging, built-in GIF support as well as the ability to edit and delete messages. 
 
-Built using Stream Chat which gives you access to the APIs to allow you to search, create channels etc. but the JSX, layout and the styling is all up to you for your application.
-
 Try it out:
 
 Username: nana
