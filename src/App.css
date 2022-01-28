@@ -435,8 +435,7 @@
   }
   
   .channel-list__header {
-    padding-bottom: 20px;
-    height: 62px;
+    height: 65px;
   }
   
   .channel-list__header__text {
@@ -446,7 +445,7 @@
     font-size: 20px;
     line-height: 28px;
     color: #ffffff;
-    justify-content: center;
+    text-align: center;
   }
   
   .channel-search__container {
