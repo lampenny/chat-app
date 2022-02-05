@@ -58,4 +58,4 @@ const EditChannel = ({ setIsEditing }) => {
     )
 }
 
-export default EditChannel
+export default EditChannel;
