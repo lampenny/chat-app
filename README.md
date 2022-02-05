@@ -12,9 +12,6 @@ Password: 123
 
 <img width="1217" alt="project2" src="https://user-images.githubusercontent.com/79977073/151477857-0cb350b1-98c1-44a8-adce-b883c556dd18.png">
 
-<<<<<<< HEAD
-<img width="1247" alt="chat-app1" src="https://user-images.githubusercontent.com/79977073/146488173-5c6a13b1-cd83-488f-8194-f02d22ea68ca.png">
-
 # Overview
 📁 For maintainability, folder structure has been organized according to this project size. As a personal project, components & assets are in it’s own folders but the components have not been destructured further.
 
@@ -23,5 +20,3 @@ Password: 123
 ⚙️ Uses functional components with the three most important components being Channel Search, Team Channel List and Team Channel Preview.
 
 📎 Built using 3 dependencies: stream-chat, stream-chat-react, universal-cookie. 
-=======
->>>>>>> b6f08756030bfdb6173f4c59b7e6521374df0e81
