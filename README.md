@@ -16,12 +16,10 @@ A fully responsive Chat application. Features include search, reactions, threads
 🖌 CSS selector naming uses the BEM methodology (https://en.bem.info/methodology/). Block followed by underscores and the element (e.g. `channel-list__list__wrapper`) then modifiers.
 
 ⚙️ Uses functional components with the three most important components being:
-`ChannelSearch`: async function that returns group messages and users in a dropdown menu.
+`ChannelSearch` component that utilises async/await to receive user input with results returned in a dropdown menu.
 
-`TeamChannelList`: custom component within the stream-chat-react component `ChannelList` which renders available group messages and direct messages in the `ChannelContainer`.
+`TeamChannelList` a custom component within the stream-chat-react component `ChannelList` which renders available group messages and direct messages in the `ChannelContainer`.
 
-`TeamChannelPreview`: uses stream-chat-react custom hook, `useChatContext`, to get and display group messages and users. 
+`TeamChannelPreview` uses stream-chat-react custom hook, `useChatContext`, to get and display group messages and users. 
 
 📎 Built using 3 dependencies: `stream-chat`, `stream-chat-react`, `universal-cookie`.
-
-# Approach
